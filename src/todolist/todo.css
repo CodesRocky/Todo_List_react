@@ -1,0 +1,124 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.m1
+{
+    justify-content: center;
+    text-align: center;
+    display: grid;
+
+}
+.m2
+{
+    display: grid;
+    text-align: center;
+    width: 17vw;
+    border-radius: 15px;
+    min-height: 60vh ;
+    grid-template-rows: 9vh 12vh auto;
+    background-color: rgb(235, 197, 197);
+    margin: 15vh;
+    overflow: hidden;
+    box-shadow: 23px 20px 81px 30px rgba(214, 82, 82, 0.973);
+}
+.m3
+{
+    background-color: brown;
+    margin: 2vh 0vh 0vh 0vh;
+    font-size: 2vw;
+    color: white;
+}
+.m4
+{
+    padding: 5px;
+}
+.m5
+{
+    font-family: inherit;
+    width: 60%;
+    border: 0;
+    border-bottom: 2px solid brown;
+    outline: 0;
+    color: white;
+    background: transparent;
+    font-weight: 700;
+}
+
+.btn
+{
+    border-radius: 90px;
+    font-size: 20px;
+    background: brown;
+    margin: 0px 3px;
+    font-weight: 600;
+    width: 30px;
+}
+.btn:hover
+{
+    background-color: rgb(52, 231, 52);
+}
+
+.mnli
+{
+    display: grid;
+    grid-template-columns: 3vw 9vw;
+    text-align: center;
+}
+.mnli button{
+    font-size: 20px;
+    border: none;
+    background-color: rgb(235, 197, 197);
+    color: brown;
+}
+.mnli button :hover
+{
+    background-color: red;
+}
+.mnli li
+{
+    overflow: hidden;
+    font-size: 20px;
+}
+@media (max-width:400px)
+{
+    .m2{
+        width: 70vw;
+        min-height: 70vh;
+    }
+    .m3{
+        font-size: 5vh;
+    }
+    .mnli{
+        grid-template-columns: 15vw 45vw;
+    }
+    .m5{
+        height: 40px;
+        font-size: 15px;
+    }
+    .btn
+    {
+        height: 30px;
+    }
+}
+@media (min-width:401px) and (max-width:900px)
+{
+    .m2{
+        width: 50vw;
+        min-height: 65vh;
+    }
+    .m3{
+        font-size: 5vh;
+    }
+    .mnli{
+        grid-template-columns: 7vw 30vw;
+    }
+    .m5{
+        height: 40px;
+        font-size: 15px;
+    }
+    .btn
+    {
+        height: 32px;
+    }
+}
